@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <h1 class="heading animate__animated animate__backInLeft">Weather App</h1>
+
+    <form onsubmit="getWeather(); return false" class=" animate__animated animate__backInUp">
+
+        <label for="cityName" name="myForm">Enter your City Name :</label>
+        <input type="text" id="cityName" name="fname" required placeholder="..." maxlength="20" minlength="1">
+        <br>
+        <br>
+        <button type="submit">Search</button>
+
+
+    </form>
+
+    <div class="bg-text t ">
+        <div class=" animate__animated animate__backInLef">
+            <h2 id="countData"></h2>
+            <h2 id="regionData"></h2>
+            <h2 id="cityData"></h2>
+            <h1 id="cityTemp"></h1>
+            <h2 id="cityCondition"></h2>
+            <h2 id="cityDate"></h2>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
