@@ -61,9 +61,24 @@ form>button:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    body {
+        background-image: url(./images/umair2.jpg);
+        /* width: 50%; */
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    
+    
+    
     .bg-text {
 
-        width: 100%;
+        width: 80%;
         background-position: cover;
+        margin: 50px;
+    }
+    form>button{
+        width: 20%;
     }
 }
